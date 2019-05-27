@@ -1,0 +1,73 @@
+.header{
+  top: 0;
+  width: 100%;
+
+  .banner {
+    padding: 0px 5% 0 5%;
+    height: 350px;
+    color: white;
+    width: 100%;
+    display: flex;
+    position: relative;
+    background: #495a48 url(../img/bg.jpg);
+
+    .right-logos, .left-logos {
+      flex: 1;
+    }
+
+    .right-logos > img {
+      margin: 60px 0 0 50px;
+    }
+
+    .left-logos {
+      position: relative;
+      text-align: right;
+
+      .logo-banner {
+        top: 0;
+        right: 0;
+        margin-top: 150px;
+        position: absolute;
+      }
+    }
+  }
+
+
+  .navbar, .dropdown-menu{
+    background-image: linear-gradient(-90deg, var(--green), var(--blue));
+    position: relative;
+    width: 100%;
+    z-index: 1;
+
+    a{
+      color: white !important;
+
+    }
+
+    .dropdown-item:hover{
+      background-color: var(--blue);
+    }
+
+    .nav-link{
+      font-size: 20px;
+      margin: 0 5px 0 5px;
+    }
+
+    .icon-navbar{
+      margin: 8px 10px 0 5px;
+    }
+
+    .bienvenue-label-nav{
+      display: inline;
+      margin-right: 30px;
+      font-size: 60px;
+      font-family: Just_Another_Hand;
+    }
+
+    .dropdown-menu{
+      margin-top: 30px;
+      width: unset;
+    }
+  }
+
+}

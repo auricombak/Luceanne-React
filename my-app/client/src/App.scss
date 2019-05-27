@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Open-Sans";
+  src: url("./fonts/Open_Sans/OpenSans-SemiBold.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open-Sans-Regular";
+  src: url("./fonts/Open_Sans/OpenSans-Regular.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open-Sans-Bold";
+  src: url("./fonts/Open_Sans/OpenSans-Bold.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Just_Another_Hand";
+  src: url("./fonts/Just_Another_Hand/JustAnotherHand-Regular.ttf");
+}
+
+
+body {
+  font-family: Open-Sans-Regular !important;
+  font-size: 20px !important;
+  background-image: url(./img/bg2.JPG) !important;
+  background-attachment: fixed;
+
+  --gray: #444;
+  --green: #5c8131;
+  --blue :#4f6f83;
+  --transparent-green: rgba(92,129, 49, 0.5);
+  --transparent-blue: rgba(79,111, 131, 0.5);
+  --background: rgba(255, 255, 255, 0.4);
+}
+
+
+.blue{
+  color: var(--blue);
+}
+
+.green{
+  color: var(--green);
+}
+
+.blue-gradient{
+  background: -webkit-linear-gradient(var(--blue), var(--white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+
+.green-gradient{
+  background: -webkit-linear-gradient(var(--green), var(--white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+
+.container-body {
+  min-height: 800px;
+  padding: 80px 15% 50px 15%;
+  background-image: linear-gradient(-90deg, var(--transparent-green), var(--transparent-blue));
+  height: auto;
+  color: var(--white);
+
+  .content-title{
+    width: 100%;
+    text-align: center;
+
+    h1{
+      font-family: Just_Another_Hand;
+      font-size: 90px !important;
+      color: var(--white);
+    }
+
+    hr{
+      background-color: white;
+    }
+
+
+  }
+
+  .content-container{
+    ul{
+      list-style-type: '✻ ';
+
+    }
+  }
+}
+
+

@@ -1,0 +1,14 @@
+.map-container{
+  .leaflet-container{
+    height: 500px;
+
+    .icon-marker-container{
+      margin-top: -50px !important;
+      margin-left: -20px !important;
+
+      .marker-icon{
+        fill: white;
+      }
+    }
+  }
+}
