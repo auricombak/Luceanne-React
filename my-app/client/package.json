@@ -18,12 +18,15 @@
     "redux": "^4.0.1"
   },
   "scripts": {
-    "start": "PORT=3003 react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://79.137.72.106:5000",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "proxy": "http://localhost:8000",
   "browserslist": {
     "production": [
       ">0.2%",

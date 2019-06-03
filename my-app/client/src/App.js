@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
 import './App.scss';
-import Customers from './components/customers';
 
 import Quisuisje from './components/pages/quisuisje'
 import Bienvenue from "./components/pages/bienvenue";
 
 import Header from './components/header'
-import Banner from './components/other/banner'
 
 import {BrowserRouter, Route} from "react-router-dom";
 import {Provider} from 'react-redux';
