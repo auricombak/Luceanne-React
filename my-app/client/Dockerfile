@@ -6,8 +6,9 @@ WORKDIR /srv/app/luceanne-client
 COPY package.json /srv/app/luceanne-client
 
 
-RUN npm install
+RUN npm build
+RUN npm install -g serve
 
 COPY . /srv/app/luceanne-client
 
-CMD ["npm", "run", "start"]
+CMD ["serve", "-s", "build", "-l", "80"]
