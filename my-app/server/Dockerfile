@@ -4,8 +4,6 @@ RUN mkdir -p /srv/app/luceanne-server
 WORKDIR /srv/app/luceanne-server
 
 COPY package.json /srv/app/luceanne-server
-COPY package-lock.json /srv/app/luceanne-server
-
 
 RUN npm install
 
