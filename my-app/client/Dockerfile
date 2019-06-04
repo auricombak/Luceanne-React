@@ -4,11 +4,13 @@ RUN mkdir -p /srv/app/luceanne-client
 WORKDIR /srv/app/luceanne-client
 
 COPY package.json /srv/app/luceanne-client
-
-
-RUN npm build
-RUN npm install -g serve
+RUN npm install
 
 COPY . /srv/app/luceanne-client
 
-CMD ["serve", "-s", "build", "-l", "80"]
+RUN npm run build
+RUN npm install -g serve
+
+
+
+CMD ["serve", "-s", "build"]

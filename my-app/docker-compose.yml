@@ -21,10 +21,9 @@ services:
     expose:
       - ${REACT_APP_PORT}
     ports:
-      - ${REACT_APP_PORT}:3000
+      - ${REACT_APP_PORT}:5000
     volumes:
       - ./client/src:/srv/app/luceanne-client/src
       - ./client/public:/srv/app/luceanne-client/public
     links:
       - server
-    command: npm run start
